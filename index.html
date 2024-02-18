@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{moin}}</h1>
+    <i>{{moin}}</i>
+    <h1>Name:{{person.name}}</h1>
+    <h1>Age:{{person.age}}</h1>    
+    <h1>Age:{{person.age}}</h1>
+    <h1>Website: <a :href="person.website">{{person.website}}</a></h1>
+    <div v-html="innerHtml"></div>
+  </div> 
+  <script src="./app.js"></script>
+</body>
+</html>
